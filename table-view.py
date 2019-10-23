@@ -30,6 +30,8 @@ def display_table(client, table_name, sort_column, desc):
     if sort_column:
         table.sortby = sort_column
         table.reversesort = desc
+    else:
+        table.sortby = headers[0]
 
     print(table)
 
